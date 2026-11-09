@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Gemas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff5f7;
+            color: #4a3b40;
+        }
+
+        /* Heading */
+        header {
+            background-color: #f7b8c8;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #713d50;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #754f5c;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #d982a0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffe5ed;
+        }
+
+        /* Isi Konten */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .welcome {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px #e8cbd4;
+        }
+
+        .welcome h2 {
+            color: #c45d83;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px #e8cbd4;
+        }
+
+        .card h3 {
+            color: #c45d83;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #d982a0;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        /* Tampilan HP */
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading -->
+    <header>
+        <h1>🌷 Catatan Gemas</h1>
+        <p>Tempat menyimpan cerita dan ide sederhana</p>
+    </header>
+
+    <!-- Menu Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#catatan">Catatan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- Isi Konten -->
+    <main class="container">
+
+        <section class="welcome" id="home">
+            <h2>Selamat Datang! ♡</h2>
+            <p>
+                Selamat datang di Catatan Gemas.
+                Website sederhana untuk berbagi cerita,
+                menyimpan ide, dan mengabadikan momen.
+            </p>
+        </section>
+
+        <section class="content">
+
+            <div class="card" id="tentang">
+                <h3>🌸 Tentang Kami</h3>
+                <p>
+                    Catatan Gemas merupakan website sederhana
+                    yang dibuat sebagai media untuk menyimpan
+                    berbagai informasi dan cerita menarik.
+                </p>
+            </div>
+
+            <div class="card" id="catatan">
+                <h3>📝 Catatan Terbaru</h3>
+                <p>
+                    Hari ini adalah kesempatan baru untuk belajar,
+                    berkembang, dan mencoba hal-hal yang lebih baik.
+                    Jangan lupa untuk selalu menghargai proses!
+                </p>
+            </div>
+
+            <div class="card" id="kontak">
+                <h3>💌 Kontak</h3>
+                <p>
+                    Terima kasih sudah mengunjungi website kami.
+                    Semoga harimu menyenangkan!
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Catatan Gemas | Dibuat dengan ♡</p>
+    </footer>
+
+</body>
+</html>
