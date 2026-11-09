@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Ratna</title>
+
+    <style>
+        body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe4ef;
+    background-image:
+        radial-gradient(#ffffff 2px, transparent 2px),
+        linear-gradient(45deg, #ffd1e3 25%, transparent 25%),
+        linear-gradient(-45deg, #ffd1e3 25%, transparent 25%);
+    background-size: 30px 30px, 40px 40px, 40px 40px;
+    color: #754456;
+    text-align: center;
+    padding: 50px;
+}
+
+        .container {
+    background-color: #fffafd;
+    padding: 35px;
+    border-radius: 30px;
+    border: 3px dashed #ffb6d0;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(255, 105, 150, 0.2);
+}
+
+        h1 {
+            color: #d81b60;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        button {
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #ad1457;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Halo, Selamat Datang!</h1>
+
+        <p>Perkenalkan, nama saya Ratna Muslimmah Ahmad.</p>
+        <p>kelas TIF RP 24 E CNS</p>
+
+        <p>Saya merupakan mahasiswa yang sedang mempelajari
+        teknologi informasi dan pengembangan website.</p>
+
+        <p>Saya senang mempelajari hal-hal baru, mencoba
+        pengalaman baru, dan mengembangkan kemampuan diri.</p>
+
+        <button onclick="tampilkanPesan()">Klik Saya</button>
+
+        <p id="pesan"></p>
+    </div>
+
+    <script>
+        function tampilkanPesan() {
+            document.getElementById("pesan").innerHTML =
+                "Terima kasih sudah mengunjungi website saya! 😊";
+        }
+    </script>
+
+</body>
+</html>
